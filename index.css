@@ -1,0 +1,16 @@
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    a{
+        margin-left: 3em;
+        display: none;
+    }
+}
+nav:hover{
+    a{
+        display: block;
+    }
+}
