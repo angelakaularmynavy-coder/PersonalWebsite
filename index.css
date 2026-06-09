@@ -1,16 +1,20 @@
-nav{
-    display: flex;
-    flex-direction: column;
+nav.menu {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* important for dropdown positioning */
 }
 
-nav{
-    a{
-        margin-left: 3em;
-        display: none;
-    }
+nav.menu .trigger {
+  padding: 0.5em;
+  cursor: pointer;
 }
-nav:hover{
-    a{
-        display: block;
-    }
+
+nav.menu a {
+  display: none;
+  margin-left: 3em;
+}
+
+nav.menu:hover a,
+nav.menu:focus-within a {
+  display: block;
 }
