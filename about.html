@@ -1,21 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "index.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A. Michelle Kaul</title>
+  <style>
+    :root {
+      --bg: 
+      oklch(70.864% 0.00622 307.918);
+      --text: #111;
+      --muted: #1b1a1a;
+      --accent: #273546;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+     header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      background: #9a8585;
+      border-bottom: 1px solid #0a0a0a;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 18px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #7d6868; }
+  
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section { margin-bottom: 40px; }
+    .section h2 { font-size: 1.25rem; margin-bottom: 8px; color: #333; }
+    .section h3 { font-size: 1.15rem; margin: 20px 0 8px; }
+    .section p { color: var(--muted); margin: 8px 0; }
+
+    footer.footer {
+      text-align: center;
+      color: #777;
+      margin: 40px 0;
+      font-size: 0.95rem;
+    }
+
+    @media (min-width: 700px) {
+      main { display: block; }
+    }
+  </style>
 </head>
+<nav class="menu" tabindex="0">
+  <span class="trigger">☰ Menu</span>
+  <a href="home.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+</nav>
 <body>
-    <nav>
-        <a href = "home.html">Home</a>
-        <a href = "contact.html">Contact</a>
-        <a href = "portfolio.html">Portfolio></a>
-    </nav>
-    <h1>AboutPage</h1>
-     <span class="materials-symbols-outlined">
-        menu
-    </span>
-</body>  
+  <header aria-label="Site header">
+    <div class="brand">A. Michelle Kaul</div>
+    
+  </header>
+
+  <main role="main" id="main-content">
+    
+    <section id="about-me" class="section" aria-labelledby="about-me-title">
+      <h2 id="about-me-title">About me</h2>
+      <p>When I'm not busy advising on digital policy and legistlation, I'm doing the following things.</p>
+    </section>
+
+    <section aria-labelledby="half-marathon-title" class="section">
+      <h3 id="half-marathon-title">Half-Marathon Races</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+    </section>
+
+    <section aria-labelledby="creative-writing-title" class="section">
+      <h3 id="creative-writing-title">Creative Writing</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+    </section>
+
+    <section aria-labelledby="hiking-title" class="section">
+      <h3 id="hiking-title">Hiking</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aperiam dolorum necessitatibus, quidem dolores, cupiditate incidunt iure temporibus natus reprehenderit minus adipisci fugiat sapiente officiis enim quasi saepe voluptates dolorem.</p>
+    </section>
+    
+    <footer class="footer" aria-label="Site footer">
+      © <span id="year"></span> A. Michelle Kaul
+    </footer>
+  </main>
+
+  <script>
+   
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
